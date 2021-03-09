@@ -17,7 +17,9 @@ namespace HelloWorldMac
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-
+            string username = nameEntry.Text;
+            string greeting = "Hello " + username;
+            greetingLabel.Text = greeting;
         }
     }
 }

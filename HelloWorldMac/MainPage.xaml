@@ -5,9 +5,12 @@
 
     <StackLayout BackgroundColor="Blue"
                  Margin="10,20">
-        <Label Text="Hello Xamarin world!"/>
-        <Entry Placeholder="Some place holder text"/>
-        <Button Clicked="Button_Clicked"/>
+        <Label x:Name="greetingLabel"
+               Text="Hello Xamarin world!"/>
+        <Entry x:Name="nameEntry"
+               Placeholder="Write your name"/>
+        <Button Text="Say hello"
+                Clicked="Button_Clicked"/>
     </StackLayout>
 
 </ContentPage>
